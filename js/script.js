@@ -158,20 +158,7 @@ let cansel = 0;
 
 for (let i = 1; i <= 10; i++) {
     numbers = prompt(`Введіть ${i}e число с 10 чисел`);
-    // if (null ?? undefined ?? numbers) {
-    //     if (numbers > 0) {
-    //         positiveNum++;
-    //     } else if (numbers < 0) {
-    //         negativeNum++;
-    //     } else zero++;
-    //     if (numbers % 2) {
-    //         oddNumber++;
-    //     } else evenNumber++;
-    // } else {
-    //     cansel++;
-    // }
-
-    if (null ?? undefined ?? numbers) {
+    if (numbers) {
         if (isFinite(numbers)) {
             if (numbers > 0) {
                 positiveNum++;
